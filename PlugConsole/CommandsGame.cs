@@ -14,7 +14,19 @@ namespace Pixeye.Source
 		[Bind]
 		public void Goto(string sceneName){
 			SceneMain.ChangeTo(sceneName);
-			LayerApp.Get<ProcessorConsole>().ConsoleClose();
 		}
+		[Bind]
+		public void Go(int buildIndex){
+			SceneMain.ChangeTo(buildIndex);
+		}
+		[Bind]
+		public void go(int buildIndex){
+			SceneMain.ChangeTo(buildIndex);
+		}
+		[Bind]
+		public void gotoo(string sceneName){
+			SceneMain.ChangeTo(sceneName);
+		}
+
 	}
 }

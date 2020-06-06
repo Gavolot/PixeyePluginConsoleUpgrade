@@ -14,13 +14,13 @@ namespace Pixeye.Actors
 		public string Help()
 		{
 			//return Toolbox.Get<ProcessorConsole>().Help();
-			return LayerApp.Get<ProcessorConsole>().Help();
+			return LayerKernel.Get<ProcessorConsole>().Help();
 		}
 
 		[Bind]
 		public string Create(string prefabID, Vector3 position)
 		{
-			var e = LayerApp.Entity.Create(prefabID, position);
+			var e = LayerKernel.Entity.Create(prefabID, position);
 			//var e = Actor.Create(prefabID, position).entity;
 			return $"Entity {e.transform.name} with ID [{e.id}] was created!";
 		}

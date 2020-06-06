@@ -145,7 +145,7 @@ namespace Pixeye.Actors {
 
 		void ConsoleOpen () {
 			if (console == null) {
-				console = LayerApp.Obj.Spawn<ComponentConsole>("UI Console");
+				console = LayerKernel.Obj.Spawn<ComponentConsole>("UI Console");
 				console.transform.parent.name = "UI Console";
 				console.gameObject.SetActive (false);
 			}

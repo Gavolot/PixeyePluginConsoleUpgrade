@@ -19,7 +19,7 @@ namespace Pixeye.Actors
 		public override void Plug()
 		{
 			//LayerApp.Get<ProcessorConsole>().Setup(commandsDebug);
-			LayerApp.Add<ProcessorConsole>().Setup(commandsDebug);
+			LayerKernel.Add<ProcessorConsole>().Setup(commandsDebug);
 			//Toolbox.Add<ProcessorConsole>().Setup(commandsDebug);
 		}
 	}

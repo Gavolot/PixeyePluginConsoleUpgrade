@@ -20,7 +20,7 @@ namespace Pixeye.Actors {
 		string cachedHelp = string.Empty;
 		Dictionary<string, MethodInfo> cachedMethods = new Dictionary<string, MethodInfo> ();
 		void IRequireActorsLayer.Bootstrap (LayerCore layer) {
-			layer.Updates.Add (this);
+			layer.Engine.Add(this);
 		}
 
 		public void Setup (CommandsConsole commands) {

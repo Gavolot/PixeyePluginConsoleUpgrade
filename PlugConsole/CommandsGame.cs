@@ -12,14 +12,6 @@ namespace Pixeye.Source
 			Debug.Log("ACTORS!!!");
 		}
 		[Bind]
-		public void Goto(string sceneName){
-			SceneMain.ChangeTo(sceneName);
-		}
-		[Bind]
-		public void Go(int buildIndex){
-			SceneMain.ChangeTo(buildIndex);
-		}
-		[Bind]
 		public void go(int buildIndex){
 			SceneMain.ChangeTo(buildIndex);
 		}
